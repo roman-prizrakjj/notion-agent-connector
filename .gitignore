@@ -1,0 +1,12 @@
+__pycache__/
+.venv/
+*.har
+*.curl
+session.json
+sessions.json
+.env
+.env.*
+!.env.example
+*.log
+*.zip
+*.pyc

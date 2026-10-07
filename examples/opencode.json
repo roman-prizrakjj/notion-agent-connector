@@ -1,0 +1,26 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "notion": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Notion Agent",
+      "options": {
+        "baseURL": "http://127.0.0.1:8765/v1",
+        "apiKey": "{env:NOTION_CONNECTOR_KEY}"
+      },
+      "models": {
+        "notion-auto": {"name": "Notion · автоматический выбор"}
+      }
+    }
+  },
+  "mcp": {
+    "notion": {
+      "type": "remote",
+      "url": "http://127.0.0.1:8765/mcp",
+      "oauth": false,
+      "timeout": 300000,
+      "enabled": true,
+      "headers": {"Authorization": "Bearer {env:NOTION_CONNECTOR_KEY}"}
+    }
+  }
+}

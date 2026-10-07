@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "notion": {
+      "command": "py",
+      "args": ["-3", "-X", "utf8", "ABSOLUTE_PATH_TO_CONNECTOR/mcp_stdio.py"]
+    }
+  }
+}
